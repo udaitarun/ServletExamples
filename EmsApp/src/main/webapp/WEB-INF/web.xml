@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app version="2.5" id="WebApp_ID"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+
+	<servlet>
+		<servlet-name>EmployeeFindAllController</servlet-name>
+
+		<servlet-class>com.createiq.ems.controller.EmployeeFindAllController
+		</servlet-class>
+
+	</servlet>
+
+
+	<servlet-mapping>
+
+		<servlet-name>EmployeeFindAllController</servlet-name>
+
+		<url-pattern>/findAll</url-pattern>
+
+	</servlet-mapping>
+
+
+	<servlet>
+
+
+		<servlet-name>EmployeeDeleteController</servlet-name>
+
+		<servlet-class>com.createiq.ems.controller.EmployeeDeleteController
+		</servlet-class>
+
+	</servlet>
+
+
+	<servlet-mapping>
+
+		<servlet-name>EmployeeDeleteController</servlet-name>
+
+		<url-pattern>/delete</url-pattern>
+
+	</servlet-mapping>
+
+
+	<servlet>
+
+
+
+		<servlet-name>EmployeeSaveController</servlet-name>
+
+		<servlet-class>com.createiq.ems.controller.EmployeeSaveController
+		</servlet-class>
+
+	</servlet>
+
+
+	<servlet-mapping>
+
+		<servlet-name>EmployeeSaveController</servlet-name>
+
+		<url-pattern>/save</url-pattern>
+
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>EmployeeUpdateController</servlet-name>
+
+		<servlet-class>com.createiq.ems.controller.EmployeeUpdateController
+		</servlet-class>
+
+	</servlet>
+
+
+	<servlet-mapping>
+
+		<servlet-name>EmployeeUpdateController</servlet-name>
+
+		<url-pattern>/update</url-pattern>
+
+	</servlet-mapping>
+
+
+</web-app>
